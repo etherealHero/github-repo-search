@@ -1,8 +1,6 @@
 import { Octokit } from 'octokit'
 
-const octokit = new Octokit({
-  auth: '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'
-})
+const octokit = new Octokit()
 
 const getRepos = async query => {
   const req = await octokit.request(
