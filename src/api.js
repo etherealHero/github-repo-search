@@ -24,8 +24,7 @@ const getRepos = async (query) => {
       })),
     ]
 
-    console.log("Ratelimit: ", req.headers["x-ratelimit-remaining"])
-    console.log(data)
+    // console.log("Ratelimit: ", req.headers["x-ratelimit-remaining"])
 
     return data
   } catch (error) {
