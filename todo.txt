@@ -11,6 +11,7 @@
 
 (x) - js ES modules
 (x) - sass loader
-() - structure
-() - landing
+(x) - structure
+(x) - landing
 () - connect Api
+() - валидация на пустой запрос
