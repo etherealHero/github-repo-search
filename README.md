@@ -5,8 +5,6 @@
 - NodeJS
 - npm or yarn
 
-=====
-
 ## installing || start development:
 
 ```
