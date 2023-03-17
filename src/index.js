@@ -15,8 +15,8 @@ async function handleSubmit(event) {
   data = null
   const query = event.target.elements["query"].value.trim() || null
 
-  if (!query) {
-    list.innerHTML = "Нельзя отправить пустой запрос!"
+  if (!query || query?.length <= 2) {
+    list.innerHTML = "Слишком короткий запрос!"
 
     return
   }
