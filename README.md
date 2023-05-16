@@ -10,4 +10,4 @@ yarn
 yarn start
 ```
 ## live-preview
-etherealhero.github.io/github-repo-search/
+[I'm an inline-style link](https://etherealhero.github.io/github-repo-search/)
