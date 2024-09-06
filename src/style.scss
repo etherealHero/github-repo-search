@@ -1,0 +1,176 @@
+$dark: #2d333b;
+$black: #1c2128;
+$light: #444c56;
+$font-color: #bfd6d6;
+$accent: #539bf5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  color: $font-color;
+}
+
+body {
+  background-color: $black;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.gitrepo {
+  padding: 18px;
+
+  &-wrapper {
+    border-radius: 10px;
+    border: 1px solid $light;
+    padding: 12px 12px 0;
+
+    background-color: $dark;
+  }
+
+  &-title {
+    font-size: 28px;
+    font-weight: 500;
+
+    margin-bottom: 18px;
+  }
+
+  &__inner {
+    margin: 28px 0;
+  }
+
+  &__item {
+    padding: 12px 0;
+    border-top: 1px solid $light;
+
+    &-title {
+      color: $accent;
+      font-weight: 600;
+    }
+
+    &-description {
+      // display: inline-block;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    &-lang {
+      display: inline-block;
+      margin-top: 10px;
+      vertical-align: middle;
+
+      i {
+        vertical-align: top;
+      }
+    }
+  }
+
+  &__clone {
+    margin-top: 10px;
+
+    &-cmd {
+      vertical-align: baseline;
+      font-size: 14px;
+      line-height: 24px;
+
+      background-color: $black;
+      padding: 6px 14px;
+
+      border: 1px solid $light;
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0;
+      outline: none;
+
+      display: inline-block;
+      height: 42px;
+      width: calc(100% - 52px);
+      // max-width: 80%;
+
+      white-space: nowrap;
+      overflow-x: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-bufferbtn {
+      vertical-align: middle;
+
+      padding: 6px 14px;
+      background-color: $black;
+      border: 1px solid $light;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+
+      display: inline-block;
+      letter-spacing: 1.2px;
+      height: 42px;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      cursor: pointer;
+
+      transition: background-color 0.1s linear;
+
+      i {
+        transition: color 0.1s linear;
+      }
+
+      &:hover {
+        background-color: $light;
+      }
+
+      &.active {
+        background-color: darkgreen;
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+}
+
+.form {
+  &-input {
+    background-color: $black;
+    padding: 6px 14px;
+
+    border: 1px solid $light;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    outline: none;
+  }
+
+  &-submit {
+    padding: 6px 14px;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    letter-spacing: 1.2px;
+
+    position: relative;
+    left: -4px;
+
+    cursor: pointer;
+  }
+}
