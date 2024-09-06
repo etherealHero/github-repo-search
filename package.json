@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "dev": "npx webpack serve --node-env development",
-    "build": "npx webpack --node-env production"
+    "build": "npx webpack --node-env production",
+    "bundle": "npx webpack bundle --node-env production --no-stats"
   },
   "dependencies": {
     "octokit": "^2.0.14"
