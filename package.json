@@ -13,8 +13,8 @@
     "api"
   ],
   "scripts": {
-    "dev": "webpack serve --node-env development",
-    "build": "webpack --node-env production"
+    "dev": "npx webpack serve --node-env development",
+    "build": "npx webpack --node-env production"
   },
   "dependencies": {
     "octokit": "^2.0.14"
